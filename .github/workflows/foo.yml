@@ -2,7 +2,7 @@ name: Foo
 
 on:
   workflow_dispatch:
-    input:
+    inputs:
       environment:
         type: choice
           description: Environment to deploy to
