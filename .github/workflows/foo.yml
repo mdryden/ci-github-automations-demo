@@ -5,11 +5,11 @@ on:
     inputs:
       environment:
         type: choice
-          description: Environment to deploy to
-          options:
-          - uat
-          - prod
-          required: true
+        description: Environment to deploy to
+        options:
+        - uat
+        - prod
+        required: true
         
 
 jobs:
