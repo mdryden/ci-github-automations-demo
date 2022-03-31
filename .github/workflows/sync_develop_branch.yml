@@ -2,7 +2,8 @@ name: Prod - Sync Develop w/ Main
 
 on:
   push:
-    main
+    branches:
+      - main
 
 jobs:
   foo: 
