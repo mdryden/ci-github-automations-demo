@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  foo: 
+  Sync: 
     runs-on: ubuntu-latest
 
     steps:
@@ -20,6 +20,7 @@ jobs:
 
       - name: Merge main into develop
         run: |
+          git config user.name "Marge"
           git fetch origin main:main
           git merge main
           git push
