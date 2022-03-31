@@ -1,0 +1,21 @@
+name: Prod - Create Release Artifacts
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  foo: 
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup
+        id: setup
+        run: |
+          echo "::set-output name=version::${GITHUB_REF:15}"
+
+      - name: Mock build
+        run: echo "Building release ${{steps.setup.output.version}}"
+
+      - name: Mock push
+        run: echo "Pushing release artifacts"
