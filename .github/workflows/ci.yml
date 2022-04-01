@@ -1,4 +1,4 @@
-name: Prod - Create Release Artifacts
+name: CI
 
 on:
   push:
