@@ -1,0 +1,16 @@
+name: Prod - Create Release Artifacts
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+
+jobs:
+  foo: 
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Mock build
+        run: echo "Building release"
