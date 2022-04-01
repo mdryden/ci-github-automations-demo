@@ -18,7 +18,7 @@ jobs:
           echo ::set-output name=version::$VERSION
 
       - name: Mock build
-        run: echo "Building release ${{steps.setup.output.version}}"
+        run: echo "Building release ${{steps.setup.outputs.version}}"
 
       - name: Mock push
         run: echo "Pushing release artifacts"
