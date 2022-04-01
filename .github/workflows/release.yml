@@ -6,14 +6,14 @@ on:
 
 jobs:
   job1:
-    name: Create release artificats 
+    name: Create release artifacts 
     runs-on: ubuntu-latest
 
     steps:
       - name: Setup
         id: setup
         run: |
-          echo "::set-output name=version::${GITHUB_REF:15}"
+          echo ::set-output name=version::${GITHUB_REF/refs\/tags\//}
 
       - name: Mock build
         run: echo "Building release ${{steps.setup.output.version}}"
