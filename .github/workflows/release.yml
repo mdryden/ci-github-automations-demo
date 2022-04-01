@@ -1,11 +1,12 @@
-name: Prod - Create Release Artifacts
+name: Release
 
 on:
   release:
     types: [published]
 
 jobs:
-  foo: 
+  build:
+    name: Create release artificats 
     runs-on: ubuntu-latest
 
     steps:
