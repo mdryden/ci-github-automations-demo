@@ -8,9 +8,13 @@ on:
   pull_request:
 
 jobs:
-  foo: 
+  job1:
+    name: Build and test 
     runs-on: ubuntu-latest
 
     steps:
       - name: Mock build
-        run: echo "Building release"
+        run: echo "Building"
+
+      - name: Mock test
+        run: echo "Testing release"

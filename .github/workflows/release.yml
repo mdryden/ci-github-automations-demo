@@ -5,7 +5,7 @@ on:
     types: [published]
 
 jobs:
-  build:
+  job1:
     name: Create release artificats 
     runs-on: ubuntu-latest
 
